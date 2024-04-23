@@ -388,6 +388,11 @@ MonoBehaviour:
   _horizontalRange: 10
   _verticalRange: 10
   _frequency: 1
+--- !u!4 &445520655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4152078414302299693, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+  m_PrefabInstance: {fileID: 7278587214062324512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &485340620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1499,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4787275162853589653, guid: bf68b285f5d23404888bc9d69f11a1cf, type: 3}
   m_PrefabInstance: {fileID: 469695376307328488}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1356481885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5422555348732763773, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+  m_PrefabInstance: {fileID: 7278587214062324512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1434482419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1591,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9dd0398b2cf24984e8ca83a65eb4cd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1450010903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+  m_PrefabInstance: {fileID: 7278587214062324512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984e9a1aa3a76b4994e8b7584b502c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1601692814
@@ -1828,6 +1849,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bee59c6af0565a4eab2ac0dc8bccef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1892269603 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3299074342255790673, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+  m_PrefabInstance: {fileID: 7278587214062324512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1906378552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8734472841644780110, guid: a004bfdc44892744da9c87e4c4210100, type: 3}
@@ -10707,6 +10733,50 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 427347119}
+    - target: {fileID: 4016059238816121118, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _cockpitAnimationControls
+      value: 
+      objectReference: {fileID: 1450010903}
+    - target: {fileID: 7201456975510760799, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _pitchAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201456975510760799, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _cockpitAnimationControls
+      value: 
+      objectReference: {fileID: 1450010903}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _joystick
+      value: 
+      objectReference: {fileID: 445520655}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _throttleRange
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _joystickRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _joystickRange.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _joystickRange.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _throttles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _throttles.Array.data[0]
+      value: 
+      objectReference: {fileID: 1892269603}
+    - target: {fileID: 8409647261647774282, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
+      propertyPath: _throttles.Array.data[1]
+      value: 
+      objectReference: {fileID: 1356481885}
     - target: {fileID: 8937979640209025546, guid: 4677c1f369c8b474489f172e726dff06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
