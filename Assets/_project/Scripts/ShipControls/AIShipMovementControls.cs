@@ -56,7 +56,8 @@ public class AIShipMovementControls : MovementControlsBase
     {
         if (!_target || !_enableYaw) return 0f;
         if (!Mathf.Approximately(0f, _horizontalAvoidance)) return _horizontalAvoidance;
-        _yaw = Mathf.Atan2(_localDirection.x, _localDirection.z) * Mathf.Rad2Deg;
+       // _yaw = Mathf.Atan2(_localDirection.x, _localDirection.z) * Mathf.Rad2Deg;
+        _yaw = Mathf.Atan(_localDirection.z) * Mathf.Rad2Deg;
         if (Mathf.Approximately(0, _yaw)) return 0f;
         return _yawPidController.Update(Time.deltaTime, _yaw, 0f) * -1f;
     }
@@ -65,7 +66,7 @@ public class AIShipMovementControls : MovementControlsBase
     {
         if (!_target || !_enablePitch) return 0f;
         if (!Mathf.Approximately(0f, _verticalAvoidance)) return _verticalAvoidance;
-        _pitch = Vector3.Angle(Vector3.down, _localDirection) - 90f;
+        _pitch = Vector3.Angle(Vector3.forward, _localDirection) - 90f;
         return _pitchPidController.Update(Time.deltaTime, _pitch, 0f);
     }
 

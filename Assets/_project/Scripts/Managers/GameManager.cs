@@ -1,4 +1,4 @@
-using System;
+ using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     void OnEnable()
     {
         SetGameState(GameState.Patrol);
-        MusicManager.Instance.PlayPatrolMusic();
+        //MusicManager.Instance.PlayPatrolMusic();
     }
 
     void Update()

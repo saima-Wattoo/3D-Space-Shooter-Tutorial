@@ -1,8 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ShipController : MonoBehaviour
 {
+    //[SerializeField] ShipMovementInput _movementInput;
+    //IMovementControls ControlInput => _movementInput.MovementControls;
+    
     [SerializeField] Shield _shield;
     [SerializeField]
     protected MovementControlsBase _movementControls;
@@ -25,6 +29,12 @@ public class ShipController : MonoBehaviour
     private AnimateCockpitControls _cockpitAnimationControls;
     
     Rigidbody _rigidBody;
+    [SerializeField]
+    //[Range(1000f, 10000f)]
+    //float _thrustForce = 7500f,
+    //    _pitchForce = 7500f,
+    //    _rollForce = 7500f;
+
     [Range(-1f, 1f)]
     float _pitchAmount, _rollAmount, _yawAmount = 0f;
 
@@ -65,7 +75,7 @@ public class ShipController : MonoBehaviour
             _shield.Init(_shipData.ShieldStrength);
         }
     }
-
+    
     public virtual void OnEnable()
     {
         if (_damageHandler == null) return;
@@ -79,6 +89,7 @@ public class ShipController : MonoBehaviour
         _rollAmount = MovementInput.RollAmount;
         _yawAmount = MovementInput.YawAmount;
         _pitchAmount = MovementInput.PitchAmount;
+        
     }
 
     void FixedUpdate()
